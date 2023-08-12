@@ -8,7 +8,8 @@
 </head>
 <body>
 <style>
-   body {
+   body 
+   {
          position: relative;
    }
 
@@ -23,7 +24,9 @@
           top:100px;
           left:1300px;
   }
+  body{background-color:black;}
 </style>
+
   <div class="banner">
        <div id="logo">
           <img src="logo.png" alt="logo" width="200" height="200">
@@ -33,14 +36,29 @@
   </header>
    <div class="navbar">
     <div class="absolute-position">
+       <section id="About Us">
       <ul>
        <li><a href="#">Home</a></li> 
-       <li><a href="#">About Us</a></li> 
-       <li><a href="#">Contact</a></li> 
+       <li><a href="file:///C:/Users/JEPRINS/Desktop/New%20folder%20(2)/page%202.html">About Us</a></li> 
+       <li><a href="file:///C:/Users/JEPRINS/Desktop/New%20folder%20(2)/contact%20us.html">Contact</a></li> 
        <li><a href="#">Sofa</a></li> 
        <li><a href="#">Picture</a></li> 
+        
+</section>
+    </p>
       </ul>
     </div>
+    <script>
+  function toggleDetails() {
+    var detailsDiv = document.getElementById("more-details");
+    if (detailsDiv.style.display === "none") {
+      detailsDiv.style.display = "block";
+    } else {
+      detailsDiv.style.display = "none";
+    }
+  }
+</script>
+
     </div>
   <main>
     <section id="about">
@@ -67,7 +85,7 @@ p
 }
 </style>
       <center>
-     <h4><p>At Upholstery Services, we take pride in our craftsmanship and attention to detail. With years of experience,<br>our skilled team can transform your old furniture into stunning pieces that breathe new life into your home.</p></h4>
+     <p>At Upholstery Services, we take pride in our craftsmanship and attention to detail. With years of experience,our skilled team can transform <br>your old furniture into stunning pieces that breathe new life into your home.</p>
     </section>
 </center>
 <center>
@@ -76,27 +94,29 @@ p
       <h2>Our Services</h2>
     <div class="navbar">
       <ul>
-       <button type="button"><span></span>Upholstery Repair</button>
+     <button type="button"><span></span>UPHOLSTERY REPAIR</button>
       <button type="button"><span></span>FABRIC SECTION</button>
        <button type="button"><span></span>CUSTOM UPHOLSTERY</button>
-      <button type="button"><span></span>DESIGN</button>
-     </ul>
+       <button type="button"><span></span>DESIGN</button>    
+      </ul>
     </div>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <h4><p>If you have any questions or would like to schedule a consultation, please don't hesitate to contact us.</p></h4>
+     <h2>Contact Form</h2>
+      If you have any questions or would like to schedule a consultation, please don't hesitate to contact us.
 </center>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+  <form action="https://formsubmit.co/e6a48132b3f5faaad535055fd0468dfc" method="POST" >
+      <form method="post">
+        <input type="text" placeholder="Your Name" id="your name" autocomplete="off">
+        <input type="email" placeholder="Your Email" id="your email" autocomplete="off">
+        <textarea id="Your Message" placeholder="Message" cols="30" rows="10"></textarea>
+<div class="send">
+       <div><button id="Send"><span></span>SEND</button></div>
       </form>
     </section>
   </main>
-</center>
+ </center>
   <footer>
     <p>&copy; 2023 Upholstery Services. All rights reserved.</p>
   </footer>
